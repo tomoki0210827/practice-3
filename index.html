@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja"">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>第4回　CSS</h1>
+    <h2>カスケード　詳細度　継承</h2>
+    <h3 id="title" class="a b c d e  f g h i j k" style="color: pink;">IT大学</h3>
+    <nav>
+        <ul>
+            <li>リンク　→ <a href="https://www.yahoo.co.jp">Yahoo</a></li>
+            <li>リンク　→ <a href="http://google.com">Google</a></li>
+            <li>リンク　→ <a href="https://youtube.com">Yotube</a></li>
+            <li>リンク　→ <a href="https://apple.com">Apple</a></li>
+        </ul>
+    </nav>
+    <p style="color: yellowgreen;">カスケード：CSSルールの順序</p>
+    <p>詳細度　複数のルールが適用された場合の優先度</p>
+    <p>id を属性指定する場合、最初は「.」ではなく「＃」で始める</p>
+    <p>属性を指定する場合の優先度はstyle>id>class>無印となる</p>
+    <p>1000 style：インラインスタイルにはセレクターがないため、最も優先度が高い</p>
+    <p>100 idセレクター</p>
+    <p>10 クラスセレクター、属性セレクター、疑似クラス EX class </p>
+    <p>1 要素セレクター　EX divとかp::firsr-letter</p>
+    <p>指定したcolorの後に!important を加えると詳細度の優先度を変更できる</p>
+    <p>継承　親要素から子要素へプロパティ値を引き継ぐ</p>
+    <p>すべてのプロパティ値のリセット　all:unset</p>
+    
+    <div>ブロック１</div>
+    <div class="fix">ブロック２</div>
+    <div>divとはコンテンツ分割要素　フローコンテンツの汎用コンテナーです。 CSS を用いてスタイル付けがされるまでは、コンテンツやレイアウトには影響を与えません。</div>
+</body>
+</html>
